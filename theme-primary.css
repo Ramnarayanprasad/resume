@@ -1,0 +1,46 @@
+/* 🎨 Primary Theme */
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #cfe2ff !important; /* Soft primary background */
+  color: #052c65 !important; /* Dark navy text */
+}
+
+/* Progress Bar Accent */
+.progress-bar {
+  background-color: #0d6efd !important; /* Bootstrap primary blue */
+}
+
+/* Professional Section Titles */
+.section-title {
+  color: #052c65 !important;
+  border-left: 4px solid #0d6efd;
+  padding-left: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Adapt text-dark to primary theme */
+.text-dark {
+  color: #052c65 !important;
+}
+
+/* Muted Text Color for Primary Theme */
+.text-muted {
+  color: #4a5d82 !important; /* Muted navy/grey */
+}
+
+/* List icons (fa-check) with primary blue */
+.sub-list li i {
+  color: #0d6efd !important;
+}
+
+/* Buttons & Links */
+a,
+.btn-link {
+  color: #052c65 !important;
+}
+
+a:hover {
+  color: #0b4abf !important; /* Slightly brighter hover blue */
+}

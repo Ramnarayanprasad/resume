@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Basic Meta Tags -->
+<title>Ramnarayan Prasad - .NET Fullstack Developer</title>
+<meta name="description" content="Dot Net Fullstack Developer with 10 years of experience in ASP.NET Core, SQL, React, and Angular." />
+
+<!-- Open Graph Meta Tags (for Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="Ramnarayan Prasad - .NET Fullstack Developer" />
+<meta property="og:description" content="Dot Net Fullstack Developer with 10 years of experience in ASP.NET Core, SQL, React, and Angular." />
+<meta property="og:image" content="https://ramnarayanprasad.github.io/resume/images/your-photo.jpeg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ramnarayanprasad.github.io/resume/" />
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ramnarayan Prasad - .NET Fullstack Developer" />
+<meta name="twitter:description" content="Dot Net Fullstack Developer with 10 years of experience in ASP.NET Core, SQL, React, and Angular." />
+<meta name="twitter:image" content="https://ramnarayanprasad.github.io/resume/images/your-photo.jpeg" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <style>
+/* 🌞 Default Light Theme */
+
+/* Body & Fonts */
+body {
+  background: #f8f9fa;
+  font-family: "Inter", sans-serif;
+  color: #212529;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0d6efd; /* Primary accent for light theme */
+  margin: 16px 0 8px 0;
+  padding-left: 8px;
+  border-left: 4px solid #0d6efd;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Profile Card */
+.profile-card {
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  color: #212529;
+  height: 100%;
+}
+
+.profile-card img, .profile-thumbnail {
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 250px;
+  height: 220px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Info Blocks */
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.4rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 40px;
+  width: 100%;
+  font-size: 10px;
+  background: rgba(13,110,253,0.05); /* subtle light accent */
+}
+
+.info-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.info-block i {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.info-label {
+  font-weight: 600;
+  font-size: 10px;
+  opacity: 0.85;
+}
+
+.info-value {
+  font-weight: 500;
+  font-size: 10px;
+  margin-top: 0.2rem;
+  word-break: break-word;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* Projects */
+.project-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.4rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-height: 40px;
+  width: 100%;
+  font-size: 10px;
+}
+
+/* Sublist Items */
+.sub-list li {
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+
+.sub-list li i {
+  font-size: 10px;
+  color: #0d6efd; /* Primary blue icon */
+}
+
+/* Buttons */
+.btn-default {
+  background-color: #f8f9fa;
+  color: #212529;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-default:hover {
+  background-color: #e2e6ea;
+  border-color: #adb5bd;
+  color: #212529;
+}
+
+/* Theme Buttons */
+.theme-btns {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.theme-btns button {
+  min-width: 90px;
+}
+
+/* Column Layout */
+.profile-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row alignment helper */
+.row.align-items-start {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Responsive Print */
+@media print {
+  body, .container {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    gap: 0 !important;
+    width: 100% !important;
+    page-break-inside: avoid !important;
+  }
+
+  .profile-col {
+    flex: 1 1 33.33% !important;
+    min-width: 0 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .profile-card, .info-block {
+    margin: 0 !important;
+    padding: 0.2rem 0.5rem !important;
+    width: 100% !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    page-break-inside: avoid !important;
+  }
+
+  .info-label, .info-value {
+    font-size: 9pt !important;
+  }
+
+  .theme-btns, .btn {
+    display: none !important;
+  }
+}
+
+</style>
+<!-- Default Theme -->
+<link id="theme-link" rel="stylesheet" href="theme-warning.css">
+</head>
+<body>
+
+<div class="container py-1" >
+  <!-- Theme Toggle Buttons -->
+<div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+  <!-- Theme Toggle Buttons -->
+  <div class="theme-btns btn-group btn-group-sm" role="group">
+    <button class="btn btn-primary btn-sm" onclick="switchTheme('primary')">
+      <i class="fa-solid fa-palette"></i> Primary
+    </button>
+    <button class="btn btn-secondary btn-sm" onclick="switchTheme('secondary')">
+      <i class="fa-solid fa-palette"></i> Secondary
+    </button>
+    <button class="btn btn-success btn-sm" onclick="switchTheme('success')">
+      <i class="fa-solid fa-palette"></i> Success
+    </button>
+    <button class="btn btn-info btn-sm" onclick="switchTheme('info')">
+      <i class="fa-solid fa-palette"></i> Info
+    </button>
+    <button class="btn btn-danger btn-sm" onclick="switchTheme('danger')">
+      <i class="fa-solid fa-palette"></i> Danger
+    </button>
+    <button class="btn btn-warning btn-sm" onclick="switchTheme('warning')">
+      <i class="fa-solid fa-palette"></i> Warning
+    </button>
+    <button class="btn btn-dark btn-sm" onclick="switchTheme('dark')">
+      <i class="fa-solid fa-palette"></i> Dark
+    </button>
+    <button class="btn btn-default btn-sm" onclick="switchTheme('light')">
+      <i class="fa-solid fa-palette"></i> Light
+    </button>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-btns btn-group btn-group-sm">
+    <button class="btn btn-outline-dark btn-sm" onclick="window.print()">
+      <i class="fa-solid fa-print"></i> Print
+    </button>
+    <a class="btn btn-outline-info btn-sm" href="download.html">
+      <i class="fa-solid fa-file-pdf"></i> Download
+    </a>
+    <a class="btn btn-outline-primary btn-sm" href="https://wa.me/919803202698?text=I%20want%20to%20create%20my%20own%20resume%20at%20Rs%2099" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> Create Your Own @ Rs 99
+    </a>
+    <a class="btn btn-outline-success btn-sm" href="https://wa.me/919803202698?text=Hello,%20I%20am%20interested%20in%20your%20services" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+</div>
+
+  <div class="row g-1 align-items-start align-items-stretch" id="container">
+
+
+
+ <!-- Left Side -->
+<div class="col-md-3 profile-col">
+  <div class="profile-card kapil bg-warning text-dark p-3">
+    <img src="your-photo.png" alt="Ram Narayan Prasad" class="profile-thumbnail mb-3">
+
+<h3 class="profile-title text-center fw-bold"
+    style="
+      font-size:1.5rem;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      color:var(--accent);
+      text-shadow:0 2px 4px rgba(0,0,0,0.25);
+      margin-bottom:-10px;
+    ">
+ 
+  RAM NARAYAN PRASAD
+</h3>
+
+<h5 class="section-title text-center"
+    style="
+      font-weight:700;
+      font-size:1rem;
+      letter-spacing:0.8px;
+      text-transform:uppercase;
+      color:var(--text-primary);
+      border-bottom:3px solid var(--accent);
+      display:inline-block;
+      padding:6px 12px;
+      background:rgba(0,0,0,0.03);
+      border-radius:6px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
+      transition:all 0.3s ease;
+    "
+    onmouseover="this.style.background='var(--accent)';this.style.color='#fff';"
+    onmouseout="this.style.background='rgba(0,0,0,0.03)';this.style.color='var(--text-primary)';">
+  Dot Net Fullstack Developer
+</h5>
+
+
+
+    <!-- Personal Details -->
+    <h5 class="section-title mt-3 mb-2 text-uppercase">Personal Details</h5>
+    <div class="info-block">
+      <i class="fa-solid fa-user"></i>
+      <div class="info-text">
+        <div class="info-label">Full Name</div>
+        <div class="info-value">Ram Narayan Prasad</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-calendar"></i>
+      <div class="info-text">
+        <div class="info-label">Date of Birth</div>
+        <div class="info-value">01 Feb 1987</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-location-dot"></i>
+      <div class="info-text">
+        <div class="info-label">Birth Place</div>
+        <div class="info-value">Motihari, Bihar, India</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-ruler-vertical"></i>
+      <div class="info-text">
+        <div class="info-label">Height</div>
+        <div class="info-value">5'11"</div>
+      </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <h5 class="section-title mt-3 mb-2 text-uppercase">Professional Summary</h5>
+    <div class="info-block">
+      <i class="fa-solid fa-briefcase"></i>
+      <div class="info-text">
+        <div class="info-label">Profession</div>
+        <div class="info-value">Software Developer / ERP Consultant</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-play"></i>
+      <div class="info-text">
+        <div class="info-label">Experience</div>
+        <div class="info-value">10+ Years in Software Development</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-trophy"></i>
+      <div class="info-text">
+        <div class="info-label">Achievements</div>
+        <div class="info-value">Built multiple Virtual Events, Finance Domain, School ERP & NopCommerce platforms</div>
+      </div>
+    </div>
+
+    <!-- Education & Skills -->
+    <h5 class="section-title mt-3 mb-2 text-uppercase">Education & Skills</h5>
+    <div class="info-block">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <div class="info-text">
+        <div class="info-label">Education</div>
+        <div class="info-value">MCA (LPU), BCA (JPU)</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-code"></i>
+      <div class="info-text">
+        <div class="info-label">Tech Stack</div>
+        <div class="info-value">ASP.NET Core, MVC, Web API, Azure, SQL, React, Angular</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-certificate"></i>
+      <div class="info-text">
+        <div class="info-label">Certifications</div>
+        <div class="info-value">Microsoft Certified: Azure Developer Associate</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-heart"></i>
+      <div class="info-text">
+        <div class="info-label">Interests</div>
+        <div class="info-value">Open-source projects, Tech Blogging, Cricket</div>
+      </div>
+    </div>
+
+    <!-- Professional Availability -->
+    <h5 class="section-title mt-3 mb-2 text-uppercase">Professional Availability</h5>
+    <div class="info-block">
+      <i class="fa-solid fa-briefcase"></i>
+      <div class="info-text">
+        <div class="info-label">Availability</div>
+        <div class="info-value">Open to Work – Immediate Joining</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-location-arrow"></i>
+      <div class="info-text">
+        <div class="info-label">Work Preference</div>
+        <div class="info-value">Remote / Hybrid Preferred</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-building"></i>
+      <div class="info-text">
+        <div class="info-label">Relocation</div>
+        <div class="info-value">Willing to Relocate (India & Abroad)</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-clock"></i>
+      <div class="info-text">
+        <div class="info-label">Notice Period</div>
+        <div class="info-value">Immediate (0 Days)</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-globe"></i>
+      <div class="info-text">
+        <div class="info-label">Preferred Time Zone</div>
+        <div class="info-value">IST / Flexible with Overlap</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-user-check"></i>
+      <div class="info-text">
+        <div class="info-label">Employment Type</div>
+        <div class="info-value">Full-time / Contract / Freelance</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-laptop-code"></i>
+      <div class="info-text">
+        <div class="info-label">Remote Setup</div>
+        <div class="info-value">High-speed Internet, Dual Monitors, Secure Dev Environment</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-language"></i>
+      <div class="info-text">
+        <div class="info-label">Languages</div>
+        <div class="info-value">English, Hindi (Professional Proficiency)</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-user-tie"></i>
+      <div class="info-text">
+        <div class="info-label">Engagement Model</div>
+        <div class="info-value">Direct Client / Through Consulting Partner</div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-bullseye"></i>
+      <div class="info-text">
+        <div class="info-label">Career Goal</div>
+        <div class="info-value">Lead Full-Stack Developer / Architect Role</div>
+      </div>
+    </div>
+
+    <!-- Contact & Social -->
+    <h5 class="section-title mt-3 mb-2 text-uppercase">Contact & Social</h5>
+    <div class="info-block">
+      <i class="fa-solid fa-envelope"></i>
+      <div class="info-text">
+        <div class="info-label">Email</div>
+        <div class="info-value">
+          <a href="mailto:wish2sameer@gmail.com" class="text-dark text-decoration-none">wish2sameer@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-phone"></i>
+      <div class="info-text">
+        <div class="info-label">Mobile</div>
+        <div class="info-value">
+          <a href="tel:+919803202698" class="text-dark text-decoration-none">+91 98032 02698</a>
+        </div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-brands fa-linkedin"></i>
+      <div class="info-text">
+        <div class="info-label">LinkedIn</div>
+        <div class="info-value">
+          <a href="https://www.linkedin.com/in/ram-narayan-prasad-719331294/" target="_blank" class="text-dark text-decoration-none">
+            https://www.linkedin.com/in/ram-narayan-prasad-719331294/
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-brands fa-github"></i>
+      <div class="info-text">
+        <div class="info-label">GitHub</div>
+        <div class="info-value">
+          <a href="https://ramnarayanprasad.github.io/resume/" target="_blank" class="text-dark text-decoration-none">
+            https://ramnarayanprasad.github.io/resume/
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-globe"></i>
+      <div class="info-text">
+        <div class="info-label">Website</div>
+        <div class="info-value">
+          <a href="https://ramnarayanprasad.github.io/resume/download.html" target="_blank" class="text-dark text-decoration-none">
+            https://ramnarayanprasad.github.io/resume/download.html
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="info-block">
+      <i class="fa-solid fa-dollar-sign"></i>
+      <div class="info-text">
+        <div class="info-label">Net Worth</div>
+        <div class="info-value">Confidential</div>
+      </div>
+    </div>
+
+        <img src="plane-photo.jpeg" alt="Ram Narayan Prasad" class=" mb-3" style="height: 80% !important;">
+  </div>
+</div>
+
+ 
+<!-- Main Profile Card -->
+<div class="col-md-6 profile-col">
+  <div class="profile-card bg-warning text-dark p-4">
+
+ 
+
+    <!-- Professional Summary -->
+    <div class="info-block flex-column align-items-start mb-2">
+      <div class="d-flex align-items-center gap-2 mb-0">
+        <i class="fa-solid fa-user-pen"></i>
+        <div class="info-label fs-5">Professional Summary</div>
+      </div>
+      <div class="info-value">
+        Dedicated .NET Full Stack Developer with over 10 years of experience delivering enterprise-level applications. Expert in ASP.NET Core, MVC, Web API, database design, front-end frameworks, cloud services, and continuous integration/deployment.
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <!-- Experience -->
+<div class="info-block flex-column align-items-start mb-2">
+  <div class="d-flex align-items-center gap-2 mb-0">
+    <i class="fa-solid fa-briefcase"></i>
+    <div class="info-label fs-5">Experience</div>
+  </div>
+  <div class="info-value">
+
+    <!-- Job 1 -->
+    <div class="mb-3">
+      <div class="fw-bold text-dark">.NET IT Lead / Senior .NET Developer</div>
+      <div class="small text-muted">Kestone IMS | Mar 2020 – Sept 2025 | Delhi, India</div>
+      <div class="badge bg-dark text-white mt-1">Tech: ASP.NET Core, Razor Pages, Azure, SignalR</div>
+      <ul class="list-unstyled mt-2 sub-list">
+        <li><i class="fa-solid fa-check text-muted me-2"></i>Led development team to build enterprise web applications with .NET Core.</li>
+        <li><i class="fa-solid fa-check text-muted me-2"></i>Migrated legacy WebForms apps to modern .NET Core architecture.</li>
+        <li><i class="fa-solid fa-check text-muted me-2"></i>Implemented Azure AD authentication and role-based access control.</li>
+        <li><i class="fa-solid fa-check text-muted me-2"></i>Mentored junior developers & enforced CI/CD best practices.</li>
+      </ul>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="mb-3">
+      <div class="fw-bold text-dark">Senior Software Engineer</div>
+      <div class="small text-muted">Tata Consultancy Services | May 2019 – Mar 2020 | Lucknow, India</div>
+      <div class="badge bg-dark text-white mt-1">Tech: Microservices, Azure Service Bus, DevOps</div>
+      <ul class="list-unstyled mt-2 sub-list">
+        <li><i class="fa-solid fa-check text-success me-2"></i>Developed scalable microservices and REST APIs for enterprise systems.</li>
+        <li><i class="fa-solid fa-check text-success me-2"></i>Integrated Azure Service Bus, Key Vault, and Microsoft Graph API.</li>
+        <li><i class="fa-solid fa-check text-success me-2"></i>Automated deployments & monitoring using Azure DevOps pipelines.</li>
+      </ul>
+    </div>
+
+    <!-- Job 3 -->
+    <div class="mb-3">
+      <div class="fw-bold text-dark">.NET Developer (Contract)</div>
+      <div class="small text-muted">JK Technosoft for TCS | Jun 2018 – Mar 2019 | Lucknow / Delhi</div>
+      <div class="badge bg-dark text-white mt-1">Tech: ASP.NET MVC, SignalR, SQL</div>
+      <ul class="list-unstyled mt-2 sub-list">
+        <li><i class="fa-solid fa-check text-success me-2"></i>Maintained B2B applications & resolved production issues quickly.</li>
+        <li><i class="fa-solid fa-check text-success me-2"></i>Added SignalR-based real-time notifications & secure authentication.</li>
+      </ul>
+    </div>
+
+    <!-- Job 4 -->
+    <div class="mb-3">
+      <div class="fw-bold text-dark">Senior .NET Developer</div>
+      <div class="small text-muted">Icon Software Technologies | Jun 2016 – Jun 2018 | Punjab, India</div>
+      <div class="badge bg-dark text-white mt-1">Tech: ASP.NET MVC, AngularJS, SQL</div>
+      <ul class="list-unstyled mt-2 sub-list">
+        <li><i class="fa-solid fa-check text-success me-2"></i>Developed 20+ portals for government clients with role-based security.</li>
+        <li><i class="fa-solid fa-check text-success me-2"></i>Optimized database queries improving performance by 30%.</li>
+      </ul>
+    </div>
+
+    <!-- Job 5 -->
+    <div>
+      <div class="fw-bold text-dark">.NET Developer</div>
+      <div class="small text-muted">Xpress Web Solutionz | Mar 2015 – Nov 2015 | Punjab / India</div>
+      <div class="badge bg-dark text-white mt-1">Tech: ASP.NET, SQL Server, jQuery</div>
+      <ul class="list-unstyled mt-2 sub-list">
+        <li><i class="fa-solid fa-check text-success me-2"></i>Delivered custom ERP and logistics modules for SMEs.</li>
+        <li><i class="fa-solid fa-check text-success me-2"></i>Handled full SDLC — requirement gathering to deployment.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+ 
+
+
+ <!-- Education Section -->
+<div class="info-block d-flex flex-column align-items-start mb-3">
+  <div class="d-flex align-items-center gap-2 mb-3">
+    <i class="fa-solid fa-graduation-cap fs-4" style="color: var(--accent);"></i>
+    <div class="info-label fs-5 fw-bold">Education</div>
+  </div>
+
+  <!-- MCA -->
+  <div class="education-card border-start border-4 rounded-3 p-3 mb-3 w-100 shadow-sm" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <h5 class="mb-0 fw-bold text-dark">Master of Computer Applications (MCA)</h5>
+      <div class="d-flex gap-2 align-items-center">
+        <span class="badge" style="background-color: var(--accent);">2010 – 2013</span>
+        <span class="fw-bold text-dark">CGPA: 8.0 / 10</span>
+      </div>
+    </div>
+    <div class="text-muted mb-2">
+      Lovely Professional University, India
+    </div>
+    <p class="mb-0 text-secondary">
+      Focused on software engineering, enterprise architecture, database management, and full-stack application development.
+    </p>
+  </div>
+
+  <!-- BCA -->
+  <div class="education-card border-start border-4 rounded-3 p-3 mb-3 w-100 shadow-sm" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <h5 class="mb-0 fw-bold text-dark">Bachelor of Computer Applications (BCA)</h5>
+      <div class="d-flex gap-2 align-items-center">
+        <span class="badge" style="background-color: var(--accent);">2007 – 2010</span>
+        <span class="fw-bold text-dark">CGPA: 8.5 / 10</span>
+      </div>
+    </div>
+    <div class="text-muted mb-2">
+      Rajendra College, Chapra — Jai Prakash University, Bihar
+    </div>
+    <p class="mb-0 text-secondary">
+      Completed Bachelor's degree focusing on programming fundamentals, software development, and database management.
+    </p>
+  </div>
+</div>
+
+
+
+<!-- Projects Section -->
+<div class="project-block flex-column align-items-start mb-2">
+  <div class="d-flex align-items-center gap-2 mb-0">
+    <i class="fa-solid fa-diagram-project"></i>
+    <div class="info-label fs-5">Projects & Professional Experience</div>
+  </div>
+
+  <!-- Virsa AI Bot -->
+  <div class="project-card border rounded-2xl p-3 mb-2 shadow-sm">
+    <h5 class="fw-bold mb-2"><i class="fa-solid fa-robot me-1"></i>Virsa AI Bot</h5>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-user-tie me-1"></i><strong>Role:</strong> Full Stack Developer / AI Integration</div>
+      <div class="col-md-6"><i class="fa-solid fa-building me-1"></i><strong>Client:</strong> Internal / R&D</div>
+    </div>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-screwdriver-wrench me-1"></i><strong>Tools:</strong> ASP.NET Core, React, OpenAI GPT API, SQL Server, SignalR</div>
+      <div class="col-md-6"><i class="fa-solid fa-calendar me-1"></i><strong>Duration:</strong> 2023–2025</div>
+    </div>
+    <div class="mb-1"><i class="fa-solid fa-tasks me-1"></i><strong>Responsibilities:</strong> Designed and developed AI-powered conversational bot with multi-platform support, knowledge base integration, admin analytics, and interactive UI.</div>
+  </div>
+
+  <!-- Virtual Events - DIY -->
+  <div class="project-card border rounded-2xl p-3 mb-2 shadow-sm">
+    <h5 class="fw-bold mb-2"><i class="fa-solid fa-diagram-project me-1"></i>Virtual Events - DIY</h5>
+    <p class="mb-2">
+      <a href="https://vosmos.events/" target="_blank" class="text-primary text-decoration-none"><i class="fa-solid fa-globe me-1"></i>Website</a>
+    </p>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-user-tie me-1"></i><strong>Role:</strong> Project Lead / Full Stack Developer</div>
+      <div class="col-md-6"><i class="fa-solid fa-building me-1"></i><strong>Client:</strong> Vosmos</div>
+    </div>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-screwdriver-wrench me-1"></i><strong>Tools:</strong> ASP.NET Core, Angular, SignalR, SQL Server, Azure Cloud, AI/ML modules</div>
+      <div class="col-md-6"><i class="fa-solid fa-calendar me-1"></i><strong>Duration:</strong> 2022–2025</div>
+    </div>
+    <div class="mb-1"><i class="fa-solid fa-tasks me-1"></i><strong>Responsibilities:</strong> Full-featured virtual event platform, AI-driven event management, attendee engagement, live streaming, hybrid support, personalized agendas, gamification, and analytics.</div>
+  </div>
+
+  <!-- APEX – Kestone IMS -->
+  <div class="project-card border rounded-2xl p-3 mb-2 shadow-sm">
+    <h5 class="fw-bold mb-2"><i class="fa-solid fa-diagram-project me-1"></i>APEX – Kestone IMS Internal Project Management</h5>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-user-tie me-1"></i><strong>Role:</strong> .NET Lead / Senior Developer</div>
+      <div class="col-md-6"><i class="fa-solid fa-building me-1"></i><strong>Client:</strong> Kestone IMS</div>
+    </div>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-screwdriver-wrench me-1"></i><strong>Tools:</strong> VB.NET, SQL Server, AJAX, AWS (Bucket & Messaging)</div>
+      <div class="col-md-6"><i class="fa-solid fa-calendar me-1"></i><strong>Duration:</strong> 2022–23</div>
+    </div>
+    <div class="mb-1"><i class="fa-solid fa-tasks me-1"></i><strong>Responsibilities:</strong> Developed in-house project management portal for leads, briefs, job cards, pre-P&L, approvals, task management, and automated profit/loss calculations with PM & KAM workflows.</div>
+  </div>
+
+  <!-- Kickass Bookkeeping -->
+  <div class="project-card border rounded-2xl p-3 mb-2 shadow-sm">
+    <h5 class="fw-bold mb-2"><i class="fa-solid fa-diagram-project me-1"></i>Kickass Bookkeeping</h5>
+    <p class="mb-2">
+      <a href="http://kickassweb.harishparas.com/" target="_blank" class="text-primary text-decoration-none me-2"><i class="fa-solid fa-globe me-1"></i>Web</a> |
+      <a href="http://kickass.harishparas.com/swagger/index.html" target="_blank" class="text-primary text-decoration-none ms-2"><i class="fa-solid fa-code me-1"></i>API</a>
+    </p>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-user-tie me-1"></i><strong>Role:</strong> Sr. Software Engineer – .Net Lead</div>
+      <div class="col-md-6"><i class="fa-solid fa-building me-1"></i><strong>Client:</strong> Kickass</div>
+    </div>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-screwdriver-wrench me-1"></i><strong>Tools:</strong> .NET Core 5.0.1, SQL Server, SignalR, Stripe, AWS</div>
+      <div class="col-md-6"><i class="fa-solid fa-calendar me-1"></i><strong>Duration:</strong> 2020–21</div>
+    </div>
+    <div class="mb-1"><i class="fa-solid fa-tasks me-1"></i><strong>Responsibilities:</strong> Designed architecture, developed Web & Mobile API, chat integration, and payment gateway implementation.</div>
+  </div>
+
+  <!-- NetApp NVD Portal -->
+  <div class="project-card border rounded-2xl p-3 mb-2 shadow-sm w-100">
+    <h5 class="fw-bold mb-2"><i class="fa-solid fa-diagram-project me-1"></i>NetApp NVD Portal</h5>
+    <p class="mb-2">
+      <a href="https://nvd-admin.azurewebsites.net" target="_blank" class="text-primary text-decoration-none me-2"><i class="fa-solid fa-globe me-1"></i>Admin</a> |
+      <a href="https://nvd-user.azurewebsites.net" target="_blank" class="text-primary text-decoration-none ms-2"><i class="fa-solid fa-globe me-1"></i>User</a>
+    </p>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-user-tie me-1"></i><strong>Role:</strong> IT Analyst – .Net Lead</div>
+      <div class="col-md-6"><i class="fa-solid fa-building me-1"></i><strong>Client:</strong> NetApp</div>
+    </div>
+    <div class="row mb-1">
+      <div class="col-md-6"><i class="fa-solid fa-screwdriver-wrench me-1"></i><strong>Tools:</strong> MVC5, Azure ADAL, DevOps</div>
+      <div class="col-md-6"><i class="fa-solid fa-calendar me-1"></i><strong>Duration:</strong> 2019–20</div>
+    </div>
+    <div class="mb-1"><i class="fa-solid fa-tasks me-1"></i><strong>Responsibilities:</strong> Architecture, coding, Azure ADAL integration, DevOps, and deployment management.</div>
+  </div>
+
+ <!-- Property & Sewerage Tax Portal -->
+<div class="project-card border rounded-2xl p-3 mb-2 shadow-sm w-100">
+  <h5 class="fw-bold mb-2"><i class="fa-solid fa-diagram-project me-1"></i>Property & Sewerage Tax Portal</h5>
+
+  <p class="mb-2">
+    <span class="text-muted"><i class="fa-solid fa-globe me-1"></i>22 Municipal Corporations, Punjab</span>
+  </p>
+
+  <div class="row mb-1">
+    <div class="col-md-6"><i class="fa-solid fa-user-tie me-1"></i><strong>Role:</strong> Senior .NET Developer / Fullstack</div>
+    <div class="col-md-6"><i class="fa-solid fa-building me-1"></i><strong>Client:</strong> Punjab Municipal Corporations</div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-md-6"><i class="fa-solid fa-screwdriver-wrench me-1"></i><strong>Tools:</strong> ASP.NET MVC, AJAX, SQL Server, PostgreSQL, Razor Pages</div>
+2016-2018  </div>
+
+  <div class="mb-1">
+    <i class="fa-solid fa-tasks me-1"></i><strong>Responsibilities:</strong> Users can register, calculate property tax based on acquired area, pay online, and print receipts. Involved in end-to-end architecture, development, database design, AJAX integration, and Razor Pages implementation.
+  </div>
+</div>
+
+<!-- Mahatma Gandhi Sarvat Vikas Yojana -->
+<div class="project-card border rounded-2xl p-3 mb-2 shadow-sm w-100">
+  <h5 class="fw-bold mb-2"><i class="fa-solid fa-diagram-project me-1"></i>Mahatma Gandhi Sarvat Vikas Yojana</h5>
+
+  <p class="mb-2">
+    <span class="text-muted"><i class="fa-solid fa-globe me-1"></i>Government Scheme Portal</span>
+  </p>
+
+  <div class="row mb-1">
+    <div class="col-md-6"><i class="fa-solid fa-user-tie me-1"></i><strong>Role:</strong> Senior .NET Developer / Fullstack</div>
+    <div class="col-md-6"><i class="fa-solid fa-building me-1"></i><strong>Client:</strong> Government of India</div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-md-6"><i class="fa-solid fa-screwdriver-wrench me-1"></i><strong>Tools:</strong> ASP.NET MVC, AJAX, SQL Server, PostgreSQL, Razor Pages</div>
+    <div class="col-md-6"><i class="fa-solid fa-calendar me-1"></i><strong>Duration:</strong> 2017</div>
+  </div>
+
+  <div class="mb-1">
+    <i class="fa-solid fa-tasks me-1"></i><strong>Responsibilities:</strong> Managed registration for citizens to avail scheme benefits. Handled 3+ crore records, reporting, and analytics. End-to-end development including database design, user registration, and reporting dashboards.
+  </div>
+</div>
+
+
+</div>
+
+
+
+    <!-- Certifications & Awards -->
+    <div class="info-block flex-column align-items-start">
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <i class="fa-solid fa-award"></i>
+        <div class="info-label fs-5">Certifications & Awards</div>
+      </div>
+      <div class="info-value">
+        <ul class="mb-0 ps-3">
+          <li>Microsoft Certified: Azure Developer Associate</li>
+          <li>Top Contributor — Open Source Education Projects (2022)</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Right Side -->
+<div class="col-md-3 profile-col">
+  <div class="profile-card bg-warning text-dark">
+    <div class="d-flex align-items-left gap-2 mb-0">
+    <i class="fa-solid fa-diagram-project"></i>
+    <div class="info-label fs-5">Skills</div>
+  </div>
+   
+
+    <!-- Technology -->
+    <div class="info-block flex-column align-items-start">
+      <div class="info-label mb-2">Technology</div>
+      <div class="w-100">
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>ASP.NET</span><span>90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>ASP.NET Core</span><span>85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>ASP.NET Core MVC</span><span>80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>C#</span><span>90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>VB#</span><span>70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORM Tools -->
+    <div class="info-block flex-column align-items-start">
+      <div class="info-label mb-2">ORM Tools</div>
+      <div class="w-100">
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Entity Framework</span><span>85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Dapper</span><span>80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>ADO.Net</span><span>85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Linq</span><span>80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloud -->
+    <div class="info-block flex-column align-items-start">
+      <div class="info-label mb-2">Cloud</div>
+      <div class="w-100">
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>AWS</span><span>75%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Azure</span><span>70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripting -->
+    <div class="info-block flex-column align-items-start">
+      <div class="info-label mb-2">Scripting</div>
+      <div class="w-100">
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>jQuery</span><span>85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Ajax</span><span>80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Node.js</span><span>70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Angular</span><span>75%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>React</span><span>70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="info-block flex-column align-items-start">
+      <div class="info-label mb-2">Database</div>
+      <div class="w-100">
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>SQL Server</span><span>85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>MySQL</span><span>80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>MongoDB</span><span>75%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Designing -->
+    <div class="info-block flex-column align-items-start">
+      <div class="info-label mb-2">Designing</div>
+      <div class="w-100">
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>CSS</span><span>90%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Bootstrap</span><span>85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="mb-2">
+          <div class="d-flex justify-content-between">
+            <span>Photoshop</span><span>70%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Others -->
+    <div class="info-block flex-column align-items-start">
+      <div class="info-label mb-2">Others</div>
+      <div class="info-value">
+        Communication, Leadership, Time Management
+      </div>
+    </div>
+     <!-- Grouped Other Projects -->
+<div class="project-card border rounded-2xl p-3 mb-3 shadow-sm w-100" style="font-size: 10px !important;">
+  <h5 class="fw-bold mb-1">
+    <i class="fa-solid fa-diagram-project me-2"></i>Other Projects (Summary)
+  </h5>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>Platstor</strong>
+      <span class="badge bg-secondary">2018–19</span>
+    </div>
+    <div class="text-muted mb-1">Perl Automation Engineer, automated 50+ test cases for NetApp ONTAP.</div>
+    <div class="text-secondary">Tools: Perl, Storage, Ontap</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>SnapCenter</strong>
+      <span class="badge bg-secondary">2018</span>
+    </div>
+    <div class="text-muted mb-1">Sr. .NET Engineer, Web API 2, Bootstrap UI, SQL Server backup plugin.</div>
+    <div class="text-secondary">Tools: MVC5, Web API 2, jQuery</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>Biodata24</strong>
+      <span class="badge bg-secondary">2018</span>
+    </div>
+    <div class="text-muted mb-1">Sr. .NET Developer, portal for public biodata management.</div>
+    <div class="text-secondary">Tools: MVC5, jQuery, SQL Server 2014, Ajax</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>MC Jalandhar & Ludhiana</strong>
+      <span class="badge bg-secondary">2017–18</span>
+    </div>
+    <div class="text-muted mb-1">Sr. .NET Developer, citizen tax portals.</div>
+    <div class="text-secondary">Tools: ASP.NET, jQuery, SQL Server 12</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>Mypo.co.in</strong>
+      <span class="badge bg-secondary">2016</span>
+    </div>
+    <div class="text-muted mb-1">.NET Developer, B2B/B2C e-commerce portal.</div>
+    <div class="text-secondary">Tools: MVC4, jQuery, SQL Server 2012</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>Motobike API</strong>
+      <span class="badge bg-secondary">2015–16</span>
+    </div>
+    <div class="text-muted mb-1">.NET Developer, bike delivery portal.</div>
+    <div class="text-secondary">Tools: MVC5, jQuery/AngularJS, SQL Server 2012</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>BookingFor</strong>
+      <span class="badge bg-secondary">2015–16</span>
+    </div>
+    <div class="text-muted mb-1">.NET Developer, multi-event booking portal.</div>
+    <div class="text-secondary">Tools: MVC5, AngularJS, SQL Server 2012</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>Framesi India</strong>
+      <span class="badge bg-secondary">2015–16</span>
+    </div>
+    <div class="text-muted mb-1">.NET Developer, medicine info portal.</div>
+    <div class="text-secondary">Tools: MVC5, jQuery, SQL Server 2012</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>Fylfot IELET</strong>
+      <span class="badge bg-secondary">2015–16</span>
+    </div>
+    <div class="text-muted mb-1">.NET Developer, English test portal.</div>
+    <div class="text-secondary">Tools: ASP.NET, jQuery, SQL Server 12</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>Sentech America</strong>
+      <span class="badge bg-secondary">2015</span>
+    </div>
+    <div class="text-muted mb-1">.NET Developer, product portal.</div>
+    <div class="text-secondary">Tools: MVC4, jQuery, SQL Server 2012</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="d-flex justify-content-between align-items-center mb-1">
+      <strong>LoMagnet & RateAlert</strong>
+      <span class="badge bg-secondary">2013–14</span>
+    </div>
+    <div class="text-muted mb-1">Web Developer, real-time loan alerts.</div>
+    <div class="text-secondary">Tools: ASP.NET, AngularJS, SQL Server</div>
+  </div>
+
+  <div class="project-item mb-1 p-3 rounded-2 shadow-sm border-start border-4" style="border-color: var(--accent);">
+    <div class="text-muted mb-1">Developed 2 Windows Apps – Time Clock & Shop Solution</div>
+  </div>
+</div>
+  </div>
+  
+</div>
+</div>
+</div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function switchTheme(theme) {
+    document.getElementById('theme-link').href = `theme-${theme}.css`;
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+function printDiv(divId) {
+    var content = $('#' + divId).clone();
+
+    var printWindow = window.open('', '', 'height=600,width=800');
+
+    printWindow.document.write('<html><head><title>Print</title>');
+
+    // Include all CSS links
+    $('link[rel="stylesheet"]').each(function() {
+        printWindow.document.write('<link rel="stylesheet" href="' + $(this).attr('href') + '">');
+    });
+
+    printWindow.document.write('<style>');
+    // Keep print colors and make thumbnail fixed
+    printWindow.document.write('@media print { ' +
+        'body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } ' +
+        'img.profile-thumbnail { width: 250px !important; height: 220px !important; object-fit: cover !important; display: block; margin: 0 auto; } ' +
+        '.theme-btns, .btn { display: none !important; } ' + // hide buttons
+        '.profile-card { page-break-inside: avoid !important; } ' +
+        '}');
+    printWindow.document.write('</style>');
+
+    printWindow.document.write('</head><body>');
+    printWindow.document.write(content.prop('outerHTML'));
+    printWindow.document.write('</body></html>');
+
+    printWindow.document.close();
+    printWindow.focus();
+    printWindow.print();
+    printWindow.close();
+}
+</script>
+ 
+<script>
+  // Array of available theme names (without "theme-" prefix and ".css")
+  var themes = ["default", "dark", "light", "primary", "success", "danger","info","warning","secondary"];
+
+  // Function to switch theme
+  function switchThemeRandom() {
+      // Pick a random theme from the array
+      var randomTheme = themes[Math.floor(Math.random() * themes.length)];
+      // Update the theme link
+      $('#theme-link').attr('href', `theme-${randomTheme}.css`);
+      console.log("Switched to theme:", randomTheme);
+  }
+
+  // Example: switch theme every 5 seconds automatically
+  setInterval(switchThemeRandom, 5000);
+ 
+</script>
+
+ 
+
+</body>
+</html>

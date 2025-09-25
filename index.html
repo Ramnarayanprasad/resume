@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ram Narayan Prasad — .NET Fullstack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-light: #f9fafb;
+      --text-light: #111827;
+      --primary-light: #2563eb;
+      --secondary-light: #374151;
+      --card-light: #ffffff;
+
+      --bg-dark: #111827;
+      --text-dark: #f9fafb;
+      --primary-dark: #3b82f6;
+      --secondary-dark: #9ca3af;
+      --card-dark: #1f2937;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.4;
+      font-size: 11px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.light {
+      background: var(--bg-light);
+      color: var(--text-light);
+    }
+
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    .container {
+      max-width: 1000px; /* Keeps resume like a centered page */
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .resume {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: 100vh;
+      background: inherit;
+    }
+
+    aside {
+      padding: 1.5rem;
+      background: var(--card-light);
+      transition: background 0.3s;
+    }
+    body.dark aside { background: var(--card-dark); }
+
+    .photo img {
+      border-radius: 50%;
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      border-bottom: 1px solid var(--primary-light);
+      padding-bottom: 0.2rem;
+    }
+    body.dark h2 { border-color: var(--primary-dark); }
+
+    .contact-list, .skill-list, .job ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-list li, .skill-list li {
+      margin-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 11px;
+    }
+
+    .chip {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      background: var(--primary-light);
+      color: white;
+      border-radius: 999px;
+      margin: 0.2rem;
+      font-size: 0.75rem;
+    }
+    body.dark .chip { background: var(--primary-dark); }
+
+    section.main {
+      padding: 1.5rem 2rem;
+    }
+
+    article.job {
+      margin-bottom: 1rem;
+    }
+    article.job h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+    article.job .company {
+      font-size: 0.85rem;
+      color: var(--secondary-light);
+      margin-bottom: 0.3rem;
+    }
+    body.dark article.job .company { color: var(--secondary-dark); }
+
+    .toolbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.8rem;
+      gap: 0.6rem;
+      position: sticky;
+      top: 0;
+      background: inherit;
+      z-index: 100;
+    }
+
+    .btn {
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: background 0.3s;
+    }
+    .btn-theme {
+      background: var(--primary-light);
+      color: #fff;
+    }
+    body.dark .btn-theme { background: var(--primary-dark); }
+    .btn-pdf {
+      background: #10b981;
+      color: white;
+    }
+
+    /* Print (A4 optimized) */
+    @media print {
+      .toolbar { display: none; }
+      body {
+        font-size: 11pt;
+        background: white !important;
+        color: black !important;
+      }
+      aside {
+        background: white !important;
+        color: black !important;
+      }
+      h2 { border-color: black !important; }
+      .resume {
+        grid-template-columns: 220px 1fr;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skill {
+  font-size: 11px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.bar {
+  background: #e5e7eb; /* light gray */
+  border-radius: 999px;
+  overflow: hidden;
+  height: 10px;
+  position: relative;
+}
+
+.fill {
+  height: 100%;
+  background: var(--primary-light);
+  color: white;
+  font-size: 9px;
+  text-align: right;
+  padding-right: 5px;
+  border-radius: 999px;
+}
+
+body.dark .bar {
+  background: #374151; /* darker gray */
+}
+body.dark .fill {
+  background: var(--primary-dark);
+}
+.highlight {
+  font-weight: 600;
+  color: var(--primary-light);
+}
+body.dark .highlight {
+  color: var(--primary-dark);
+}
+
+  </style>
+</head>
+<body class="light">
+
+<div class="toolbar container">
+  <button class="btn btn-theme" onclick="toggleTheme()"><i class="fa-solid fa-circle-half-stroke"></i> Theme</button>
+  <button class="btn btn-pdf" onclick="window.print()"><i class="fa-solid fa-file-pdf"></i> Download PDF</button>
+</div>
+
+<div class="container">
+  <main class="resume">
+
+    <!-- Sidebar -->
+    <aside>
+      <div class="photo">
+        <img src="your-photo.jpeg" alt="Ram Narayan Prasad">
+      </div>
+      <h1>Ram Narayan Prasad</h1>
+      <p style="text-align:center;">.NET Fullstack Developer</p>
+
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><i class="fa-solid fa-phone"></i> +91 98032 02698 / 87895 08230</li>
+        <li><i class="fa-solid fa-envelope"></i> wish2sameer@gmail.com</li>
+        <li><i class="fa-solid fa-location-dot"></i> Motihari, Bihar (845401)</li>
+        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        <li><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+      </ul>
+
+<h2>Skills</h2>
+<div class="skills">
+  <div class="skill">
+    <span>ASP.NET / ASP.NET Core, EF , Linq</span>
+    <div class="bar"><div class="fill" style="width:95%">95%</div></div>
+  </div>
+  <div class="skill">
+    <span>C#, MVC, Razor Pages, Dapper</span>
+    <div class="bar"><div class="fill" style="width:95%">95%</div></div>
+  </div>
+ <div class="skill">
+    <span>Rest Api, Identity, JWT, JSON</span>
+    <div class="bar"><div class="fill" style="width:90%">90%</div></div>
+  </div>
+  <div class="skill">
+    <span>SQL Server / MySQL / MongoDB</span>
+    <div class="bar"><div class="fill" style="width:88%">88%</div></div>
+  </div>
+  <div class="skill">
+    <span>JavaScript / jQuery / Bootstrap</span>
+    <div class="bar"><div class="fill" style="width:90%">90%</div></div>
+  </div>
+  <div class="skill">
+    <span>React / Angular</span>
+    <div class="bar"><div class="fill" style="width:75%">75%</div></div>
+  </div>
+  <div class="skill">
+    <span>Azure / AWS / Firebase</span>
+    <div class="bar"><div class="fill" style="width:70%">70%</div></div>
+  </div>
+  <div class="skill">
+    <span>CI/CD, Git, DevOps</span>
+    <div class="bar"><div class="fill" style="width:80%">80%</div></div>
+  </div>
+  <div class="skill">
+    <span>SignalR, Graph API, MUX , Webinar </span>
+    <div class="bar"><div class="fill" style="width:85%">85%</div></div>
+  </div>
+</div>
+
+      <h2>Languages</h2>
+      <ul class="contact-list">
+        <li>Bhojpuri (Native)</li>
+        <li>Hindi — ★★★★★</li>
+        <li>English — ★★★★☆</li>
+      </ul>
+
+      <h2>Interests</h2>
+      <span class="chip">Cricket</span>
+      <span class="chip">Music</span>
+      <span class="chip">Travelling</span>
+
+ 
+    </aside>
+
+    <!-- Main content -->
+    <section class="main">
+<h2>About Me</h2>
+<p>
+  Dedicated <span class="highlight">.NET Full Stack Developer</span> with 10+ years of experience building enterprise-grade applications. Skilled in 
+  <span class="highlight">ASP.NET Core</span>, 
+  <span class="highlight">MVC</span>, 
+  <span class="highlight">Web API</span>, 
+  <span class="highlight">SQL Server</span>, 
+  <span class="highlight">React</span>, 
+  <span class="highlight">Angular</span>, 
+  <span class="highlight">Azure</span>, and 
+  <span class="highlight">AWS</span>. Known for delivering scalable, secure, and high-performance solutions across industries, from 
+  <span class="highlight">education</span> and 
+  <span class="highlight">finance</span> to 
+  <span class="highlight">e-commerce</span> and 
+  <span class="highlight">government portals</span>.
+</p>
+
+
+      <h2>Work Experience</h2>
+      <article class="job">
+        <h3>.NET IT Lead / Senior .NET Developer</h3>
+        <div class="company">Kestone IMS | Mar 2020 – Present</div>
+        <ul>
+          <li>Led enterprise app development using ASP.NET Core Razor Pages & Web API.</li>
+          <li>Migrated legacy Web Forms into modern .NET Core architecture.</li>
+          <li>Implemented Azure AD authentication, claims-based roles, and Azure SignalR.</li>
+          <li>Deployed CI/CD pipelines in Azure DevOps and mentored junior developers.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior Software Engineer</h3>
+        <div class="company">Tata Consultancy Services | May 2019 – Mar 2020</div>
+        <ul>
+          <li>Enhanced enterprise apps with performance tuning & backend optimization.</li>
+          <li>Implemented Azure Service Bus, Key Vault & Microsoft Graph API.</li>
+          <li>Automated tasks using Perl scripting for NetApp storage systems.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>.NET Developer</h3>
+        <div class="company">JK Technosoft (for TCS) | Jun 2018 – Mar 2019</div>
+        <ul>
+          <li>Maintained multiple B2B .NET applications and optimized performance.</li>
+          <li>Worked with Azure Service Bus, SignalR, and AAD security integration.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior .NET Developer</h3>
+        <div class="company">Icon Software Technologies | Jun 2016 – Jun 2018</div>
+        <ul>
+          <li>Built 20+ portals for Punjab Govt. (property tax, citizen services).</li>
+          <li>Worked extensively with ASP.NET MVC, AngularJS, and SQL Server.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>.NET Developer</h3>
+        <div class="company">Xpress Web Solutionz | Mar 2015 – Nov 2015</div>
+        <ul>
+          <li>Developed web & desktop apps (ERP, logistics, and custom solutions).</li>
+          <li>Enhanced School ERP modules and delivered client projects via Upwork.</li>
+        </ul>
+      </article>
+
+  <div class="section" aria-labelledby="education">
+  <h2 id="education">Education</h2>
+
+  <div class="edu-item" style="margin-bottom:12px; padding:10px 12px; border-left:4px solid var(--accent); background: var(--card); border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+    <h3 style="margin:0; font-size:13px; color: var(--accent);"><i class="fa-solid fa-graduation-cap"></i> MCA</h3>
+    <p style="margin:2px 0 0 0; font-size:10px; color: var(--text);">
+      Lovely Professional University, Phagwara, Punjab
+    </p>
+    <p style="margin:2px 0 0 0; font-size:10px; color: var(--muted);">
+      2010–2013 | CGPA: 8.5/10
+    </p>
+  </div>
+
+  <div class="edu-item" style="margin-bottom:12px; padding:10px 12px; border-left:4px solid var(--accent); background: var(--card); border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+    <h3 style="margin:0; font-size:13px; color: var(--accent);"><i class="fa-solid fa-graduation-cap"></i> BCA</h3>
+    <p style="margin:2px 0 0 0; font-size:10px; color: var(--text);">
+      Jai Prakash University, Chapra, Bihar
+    </p>
+    <p style="margin:2px 0 0 0; font-size:10px; color: var(--muted);">
+      2007–2010 | CGPA: 7.8/10
+    </p>
+  </div>
+</div>
+
+
+      <h2>References</h2>
+      <p><strong>Ravinder Singh</strong> — IT Associate Director, Kestone IMS<br>
+        Praised leadership and technical expertise in .NET Core, React, SQL Server.</p>
+      <p><strong>Kartikeya Tripathi</strong> — Division Head, TCS Lucknow<br>
+        Highlighted dedication, innovative mindset, and contributions in cloud architecture.</p>
+    </section>
+  </main>
+</div>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+  }
+</script>
+
+</body>
+</html>

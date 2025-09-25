@@ -1,0 +1,46 @@
+/* 🌑 Dark Theme */
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #212529 !important; /* Dark background */
+  color: #f8f9fa !important; /* Light text */
+}
+
+/* Progress Bar Accent */
+.progress-bar {
+  background-color: #0dcaf0 !important; /* Bright accent for visibility */
+}
+
+/* Professional Section Titles */
+.section-title {
+  color: #f8f9fa !important;
+  border-left: 4px solid #0dcaf0;
+  padding-left: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Adapt text-dark to dark theme */
+.text-dark {
+  color: #f8f9fa !important;
+}
+
+/* Muted Text Color for Dark Theme */
+.text-muted {
+  color: #adb5bd !important; /* Light gray for subtle details */
+}
+
+/* List icons (fa-check) with dark theme accent */
+.sub-list li i {
+  color: #0dcaf0 !important;
+}
+
+/* Buttons & Links */
+a,
+.btn-link {
+  color: #0dcaf0 !important;
+}
+
+a:hover {
+  color: #31d2f2 !important; /* Slightly lighter on hover */
+}

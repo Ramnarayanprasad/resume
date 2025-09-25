@@ -1,0 +1,46 @@
+/* 🎨 Secondary Theme */
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #e2e3e5 !important; /* Soft secondary background */
+  color: #41464b !important; /* Dark gray text */
+}
+
+/* Progress Bar Accent */
+.progress-bar {
+  background-color: #6c757d !important; /* Bootstrap secondary gray */
+}
+
+/* Professional Section Titles */
+.section-title {
+  color: #41464b !important;
+  border-left: 4px solid #6c757d;
+  padding-left: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Adapt text-dark to secondary theme */
+.text-dark {
+  color: #41464b !important;
+}
+
+/* Muted Text Color for Secondary Theme */
+.text-muted {
+  color: #6c757d !important; /* Muted gray */
+}
+
+/* List icons (fa-check) with secondary gray */
+.sub-list li i {
+  color: #6c757d !important;
+}
+
+/* Buttons & Links */
+a,
+.btn-link {
+  color: #41464b !important;
+}
+
+a:hover {
+  color: #343a40 !important; /* Slightly darker hover gray */
+}

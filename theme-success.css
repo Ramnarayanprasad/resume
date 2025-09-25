@@ -1,0 +1,46 @@
+/* 🌱 Success Theme */
+
+/* Profile Card Styling */
+ .profile-card {
+  background-color: #d1e7dd !important; /* Soft success background */
+  color: #0f5132 !important; /* Dark green text */
+}
+
+/* Progress Bar Accent */
+  .progress-bar {
+  background-color: #0f5132 !important; /* Dark green for better contrast */
+}
+
+/* Ensure headings look professional */
+ .section-title {
+  color: #0f5132 !important;
+  border-left: 4px solid #198754;
+  padding-left: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Make text-dark adapt to success theme */
+  .text-dark {
+  color: #0f5132 !important;
+}
+
+/* ✅ Muted Text Color for Success Theme */
+  .text-muted {
+  color: #4b6358 !important; /* Muted dark green */
+}
+
+/* List icons (like fa-check) in muted green */
+  .sub-list li i {
+  color: #198754 !important;
+}
+
+/* Buttons & Links (Optional) */
+ a,
+ .btn-link {
+  color: #0f5132 !important;
+}
+
+  a:hover {
+  color: #145c38 !important;
+}

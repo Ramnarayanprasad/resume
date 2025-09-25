@@ -1,0 +1,46 @@
+/* ℹ️ Info Theme */
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #cff4fc !important; /* Soft info background */
+  color: #055160 !important; /* Dark teal text */
+}
+
+/* Progress Bar Accent */
+.progress-bar {
+  background-color: #055160 !important; /* Dark teal for contrast */
+}
+
+/* Professional Section Titles */
+.section-title {
+  color: #055160 !important;
+  border-left: 4px solid #0dcaf0;
+  padding-left: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Adapt text-dark to info theme */
+.text-dark {
+  color: #055160 !important;
+}
+
+/* Muted Text Color for Info Theme */
+.text-muted {
+  color: #3d7e88 !important; /* Muted teal */
+}
+
+/* List icons (fa-check) with info color */
+.sub-list li i {
+  color: #0dcaf0 !important;
+}
+
+/* Buttons & Links */
+a,
+.btn-link {
+  color: #055160 !important;
+}
+
+a:hover {
+  color: #044e56 !important; /* Slightly darker on hover */
+}

@@ -1,0 +1,46 @@
+/* ❌ Danger Theme */
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #f8d7da !important; /* Soft danger background */
+  color: #842029 !important; /* Dark red text */
+}
+
+/* Progress Bar Accent */
+.progress-bar {
+  background-color: #842029 !important; /* Dark red for contrast */
+}
+
+/* Professional Section Titles */
+.section-title {
+  color: #842029 !important;
+  border-left: 4px solid #dc3545;
+  padding-left: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Adapt text-dark to danger theme */
+.text-dark {
+  color: #842029 !important;
+}
+
+/* Muted Text Color for Danger Theme */
+.text-muted {
+  color: #a77b84 !important; /* Muted dark red */
+}
+
+/* List icons (fa-check) with danger color */
+.sub-list li i {
+  color: #dc3545 !important;
+}
+
+/* Buttons & Links */
+a,
+.btn-link {
+  color: #842029 !important;
+}
+
+a:hover {
+  color: #6c1b24 !important; /* Slightly darker on hover */
+}

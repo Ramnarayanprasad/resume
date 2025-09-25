@@ -1,0 +1,46 @@
+/* ⚠️ Warning Theme */
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #fff3cd !important; /* Soft warning background */
+  color: #856404 !important; /* Dark golden text */
+}
+
+/* Progress Bar Accent */
+.progress-bar {
+  background-color: #856404 !important; /* Dark golden for better contrast */
+}
+
+/* Professional Section Titles */
+.section-title {
+  color: #856404 !important;
+  border-left: 4px solid #ffc107;
+  padding-left: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Adapt text-dark to warning theme */
+.text-dark {
+  color: #856404 !important;
+}
+
+/* Muted Text Color for Warning Theme */
+.text-muted {
+  color: #664d03 !important; /* Muted golden-brown */
+}
+
+/* List icons (fa-check) with warning color */
+.sub-list li i {
+  color: #ffc107 !important;
+}
+
+/* Buttons & Links */
+a,
+.btn-link {
+  color: #856404 !important;
+}
+
+a:hover {
+  color: #5c4300 !important; /* Slightly darker on hover */
+}
